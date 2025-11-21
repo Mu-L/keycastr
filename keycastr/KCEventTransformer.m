@@ -127,7 +127,7 @@ static NSString* kLeftTabString = @"\xe2\x87\xa4";
                                     _onSelectedKeyboardInputSourceChanged,
                                     kTISNotifySelectedKeyboardInputSourceChanged,
                                     NULL,
-                                    CFNotificationSuspensionBehaviorCoalesce);
+                                    CFNotificationSuspensionBehaviorDeliverImmediately);
     _inputSourceChangeObserved = YES;
 }
 
